@@ -11,12 +11,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
+
+
 
 /**
  *
  * @author Juan-Lee Klink 218236883
  * testing the code to make a human
  */
+
 public class JprogramTest {
     
     public JprogramTest() {
@@ -64,6 +68,22 @@ public class JprogramTest {
         assertSame(human6.getHumanName(),human7.getHumanName());
     }
     
+    
+    @Test
+    @Disabled
+    public void disabletest(){
+        Jprogram human6 = new Jprogram ("Brent","Male","Pizza","DBZ");
+        Jprogram human7 = new Jprogram ("Keelan","Male","Mussels","Naruto");
+         
+        assertSame(human6.getHumanName(),human7.getHumanName()); 
+    }
+    
+    
+    
+    
+    
+    
+   
     
         
     
