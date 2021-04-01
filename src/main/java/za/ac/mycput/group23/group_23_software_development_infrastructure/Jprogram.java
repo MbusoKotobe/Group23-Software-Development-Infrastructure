@@ -7,7 +7,7 @@ package za.ac.mycput.group23.group_23_software_development_infrastructure;
 
 /**
  *
- * @author Juan-Lee Klink
+ * @author Juan-Lee Klink 218236883
  * code to make a human 
  */
 public class Jprogram {

@@ -8,6 +8,7 @@ public class RunJprogram
 {
     public static void main( String[] args )
     {
-        
+     Jprogram human1 = new Jprogram ("Juan-Lee","Male","Pizza","Naruto");
+     System.out.println(human1);
     }
 }
