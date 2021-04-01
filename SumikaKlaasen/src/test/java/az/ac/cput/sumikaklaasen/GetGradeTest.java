@@ -72,7 +72,13 @@ public class GetGradeTest {
         if (null == grade){
             fail("should not be null");
         }
-
+     *
+     * @throws InterruptedException
+     */
+    public void timeoutTest()
+        throws InterruptedException
+{
+    Thread.sleep(2000);
 }
             }
         }
