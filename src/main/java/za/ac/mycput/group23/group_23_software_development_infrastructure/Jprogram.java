@@ -28,5 +28,41 @@ public class Jprogram {
         this.humanFavouriteanime = hFavanime;
     }
     
+    public void setHumanName (String hName){
+        this.humanName = hName;
+    }
     
+    public String getHumanName(){
+        return this.humanName;
+    }
+    
+    public void setHumanGender (String hGender){
+        this.humanGender = hGender;
+    }
+    
+    public String getHumanGender(){
+        return this.humanGender;
+    }
+    
+    public void setHumanFavouritefood (String hFavfood){
+        this.humanFavouritefood = hFavfood;
+    }
+    
+    public String getHumanFavouritefood(){
+        return this.humanFavouritefood;
+    }
+    
+    public void setHumanFavouriteanime (String hFavanime){
+        this.humanFavouriteanime = hFavanime;
+    }
+    
+    public String getHumanFavouriteanime(){
+        return this.humanFavouriteanime;
+    }
+    
+    @Override
+    public String toString(){
+        String HumanString = "Human's Name: " + this.humanName + "\n" + "Human's Gender: " + this.humanGender + "\n" + "Human's favourite food:" + this.humanFavouritefood + "\n" + "Human's favourite anime:" + this.humanFavouriteanime;
+        return HumanString;
+    }
 }
