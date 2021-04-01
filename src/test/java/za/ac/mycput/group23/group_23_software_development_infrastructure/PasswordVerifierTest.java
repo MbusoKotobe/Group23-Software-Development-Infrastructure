@@ -8,7 +8,9 @@ import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit test for simple App.
+ * @author Mbuso Kotobe 218040385
+ * This program validates if a password 
+ * is strong and safe to use.
  */
 public class PasswordVerifierTest 
 {
