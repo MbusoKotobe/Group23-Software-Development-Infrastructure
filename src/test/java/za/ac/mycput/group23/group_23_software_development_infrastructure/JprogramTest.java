@@ -159,4 +159,13 @@ public class JprogramTest {
         fail("The test case is a prototype.");
     }
     
+    @Test
+    public void testEquality(){
+        Jprogram human2 = new Jprogram ("Brent","Male","Mussels","DBZ");
+        Jprogram human3 = new Jprogram ("Brent","Male","Pizza","Naruto");
+        
+        assertEquals(human2.getHumanName(),human3.getHumanName());
+    
+    }
+    
 }
