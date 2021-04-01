@@ -49,6 +49,10 @@ public class PasswordVerifier
 
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        PasswordVerifier pass = new PasswordVerifier();
+        String password = "C++11isAwesome";
+        if(pass.isPasswordStrong(password))
+            System.out.println("password is good");
+        else System.out.println("password is not good");
     }
 }
