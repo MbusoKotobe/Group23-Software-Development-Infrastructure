@@ -14,7 +14,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author Juan
+ * @author Juan-Lee Klink 218236883
+ * testing the code to make a human
  */
 public class JprogramTest {
     
@@ -37,131 +38,10 @@ public class JprogramTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of setHumanName method, of class Jprogram.
-     */
-    @Test
-    public void testSetHumanName() {
-        System.out.println("setHumanName");
-        String hName = "";
-        Jprogram instance = new Jprogram();
-        instance.setHumanName(hName);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getHumanName method, of class Jprogram.
-     */
-    @Test
-    public void testGetHumanName() {
-        System.out.println("getHumanName");
-        Jprogram instance = new Jprogram();
-        String expResult = "";
-        String result = instance.getHumanName();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setHumanGender method, of class Jprogram.
-     */
-    @Test
-    public void testSetHumanGender() {
-        System.out.println("setHumanGender");
-        String hGender = "";
-        Jprogram instance = new Jprogram();
-        instance.setHumanGender(hGender);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getHumanGender method, of class Jprogram.
-     */
-    @Test
-    public void testGetHumanGender() {
-        System.out.println("getHumanGender");
-        Jprogram instance = new Jprogram();
-        String expResult = "";
-        String result = instance.getHumanGender();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setHumanFavouritefood method, of class Jprogram.
-     */
-    @Test
-    public void testSetHumanFavouritefood() {
-        System.out.println("setHumanFavouritefood");
-        String hFavfood = "";
-        Jprogram instance = new Jprogram();
-        instance.setHumanFavouritefood(hFavfood);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getHumanFavouritefood method, of class Jprogram.
-     */
-    @Test
-    public void testGetHumanFavouritefood() {
-        System.out.println("getHumanFavouritefood");
-        Jprogram instance = new Jprogram();
-        String expResult = "";
-        String result = instance.getHumanFavouritefood();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setHumanFavouriteanime method, of class Jprogram.
-     */
-    @Test
-    public void testSetHumanFavouriteanime() {
-        System.out.println("setHumanFavouriteanime");
-        String hFavanime = "";
-        Jprogram instance = new Jprogram();
-        instance.setHumanFavouriteanime(hFavanime);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getHumanFavouriteanime method, of class Jprogram.
-     */
-    @Test
-    public void testGetHumanFavouriteanime() {
-        System.out.println("getHumanFavouriteanime");
-        Jprogram instance = new Jprogram();
-        String expResult = "";
-        String result = instance.getHumanFavouriteanime();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class Jprogram.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        Jprogram instance = new Jprogram();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
     
     @Test
     public void testEquality(){
-        Jprogram human2 = new Jprogram ("Brent","Male","Pizza","DBZ");
+        Jprogram human2 = new Jprogram ("John","Male","Pizza","DBZ");
         Jprogram human3 = new Jprogram ("Dwayne","Male","Pizza","Naruto");
         
         assertEquals(human2.getHumanFavouritefood(),human3.getHumanFavouritefood());
@@ -170,19 +50,24 @@ public class JprogramTest {
     
     @Test
     public void testIdentity(){
-         Jprogram human4 = new Jprogram ("Brent","Male","Pizza","DBZ");
-         Jprogram human5 = new Jprogram ("Brent","Male","Mussels","Naruto");
+         Jprogram human4 = new Jprogram ("John","Male","Pizza","DBZ");
+         Jprogram human5 = new Jprogram ("John","Male","Mussels","Naruto");
          
          assertSame(human4.getHumanName(),human5.getHumanName());
     }
     
     @Test
     public void testFail(){
-        Jprogram human4 = new Jprogram ("Brent","Male","Pizza","DBZ");
-        Jprogram human5 = new Jprogram ("Keelan","Male","Mussels","Naruto");
+        Jprogram human6 = new Jprogram ("Brent","Male","Pizza","DBZ");
+        Jprogram human7 = new Jprogram ("Keelan","Male","Mussels","Naruto");
          
-        assertSame(human4.getHumanName(),human5.getHumanName());
+        assertSame(human6.getHumanName(),human7.getHumanName());
     }
+    
+    
+        
+    
+    
    
     
 }
