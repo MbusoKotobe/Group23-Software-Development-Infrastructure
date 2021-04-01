@@ -161,11 +161,28 @@ public class JprogramTest {
     
     @Test
     public void testEquality(){
-        Jprogram human2 = new Jprogram ("Brent","Male","Mussels","DBZ");
-        Jprogram human3 = new Jprogram ("Brent","Male","Pizza","Naruto");
+        Jprogram human2 = new Jprogram ("Brent","Male","Pizza","DBZ");
+        Jprogram human3 = new Jprogram ("Dwayne","Male","Pizza","Naruto");
         
-        assertEquals(human2.getHumanName(),human3.getHumanName());
+        assertEquals(human2.getHumanFavouritefood(),human3.getHumanFavouritefood());
     
     }
+    
+    @Test
+    public void testIdentity(){
+         Jprogram human4 = new Jprogram ("Brent","Male","Pizza","DBZ");
+         Jprogram human5 = new Jprogram ("Brent","Male","Mussels","Naruto");
+         
+         assertSame(human4.getHumanName(),human5.getHumanName());
+    }
+    
+    @Test
+    public void testFail(){
+        Jprogram human4 = new Jprogram ("Brent","Male","Pizza","DBZ");
+        Jprogram human5 = new Jprogram ("Keelan","Male","Mussels","Naruto");
+         
+        assertSame(human4.getHumanName(),human5.getHumanName());
+    }
+   
     
 }
