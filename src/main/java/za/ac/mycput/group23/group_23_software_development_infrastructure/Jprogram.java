@@ -62,7 +62,7 @@ public class Jprogram {
     
     @Override
     public String toString(){
-        String HumanString = "Human's Name: " + this.humanName + "\n" + "Human's Gender: " + this.humanGender + "\n" + "Human's favourite food:" + this.humanFavouritefood + "\n" + "Human's favourite anime:" + this.humanFavouriteanime;
+        String HumanString = "Human's Name: " + this.humanName + "\n" + "Human's Gender: " + this.humanGender + "\n" + "Human's favourite food: " + this.humanFavouritefood + "\n" + "Human's favourite anime: " + this.humanFavouriteanime;
         return HumanString;
     }
 }
