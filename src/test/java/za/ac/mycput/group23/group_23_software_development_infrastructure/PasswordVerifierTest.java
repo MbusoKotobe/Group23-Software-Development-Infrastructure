@@ -47,7 +47,7 @@ public class PasswordVerifierTest
    
     //Failing Test
     @Test
-    public void isPasswordStrong()
+    public void isPasswordStrongTest()
     {
         //Test with valid password
         boolean result = false;
@@ -64,10 +64,10 @@ public class PasswordVerifierTest
         resultThree = obj.isPasswordStrong(nearlyFit);
         assertEquals(false, resultTwo);
 
-        //Test with almost fit password
+        //Test with almost fit password, THIS FAILS.
         boolean resultFour = false;
         resultFour = obj.isPasswordStrong(almostFit);
-        assertEquals(false, resultFour);
+        assertEquals(true, resultFour);
     }
 
     //Timeout Test
@@ -81,10 +81,10 @@ public class PasswordVerifierTest
     //Disabled Test
     @Test
     @Disabled
-    public void isPasswordLong()
+    public void isPasswordStrongDisabledTest()
     {
         boolean result = false;
-        result = obj.isPasswordLong(password);
+        result = obj.isPasswordStrong(password);
         assertEquals(true, result);
     }
 }
