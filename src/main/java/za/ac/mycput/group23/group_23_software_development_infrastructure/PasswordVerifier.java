@@ -33,10 +33,9 @@ public class PasswordVerifier
         return this.password;
     }
 
-    public boolean isPasswordLong(String password)
+    private boolean isPasswordLong(String password)
     {
-        if(password.length() >= 8) return true;
-        else return false;
+        return password.length() >= 8;
     }
 
     public boolean isPasswordStrong(String password)
@@ -44,11 +43,15 @@ public class PasswordVerifier
         String specialCharacters = "[^A-Za-z0-9]";
         Pattern pattern = Pattern.compile(specialCharacters);
         Matcher matcher = pattern.matcher(password);
-        return (matcher.find());
+        return isPasswordLong(password) ? matcher.find() : false;
     }
 
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        PasswordVerifier pass = new PasswordVerifier();
+        String password = "C++11isAwesome";
+        if(pass.isPasswordStrong(password))
+            System.out.println("password is good");
+        else System.out.println("password is not good");
     }
 }
